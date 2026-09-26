@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZo&skey=c491285d6722e4fa&v=v20#Inter) format('svg');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=pxiEyp8kv8JHgFVrFJI&skey=87759fb096548f6d&v=v24#Poppins) format('svg');
+}
