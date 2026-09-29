@@ -325,11 +325,9 @@ body {
 
 .cv-button {
     position: relative;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     gap: 8px;
 
     padding: 11px 17px;
@@ -338,7 +336,6 @@ body {
     border-radius: 10px;
 
     background: rgba(151, 88, 255, 0.1);
-
     color: white;
 
     font-size: 13px;
@@ -347,7 +344,7 @@ body {
     overflow: hidden;
 
     transition:
-        transform 0.5s var(--smooth),
+        transform 0.5s ease,
         background 0.5s ease,
         box-shadow 0.5s ease,
         border-color 0.5s ease;
@@ -357,18 +354,16 @@ body {
     content: "";
 
     position: absolute;
-
     inset: 0;
 
-    background:
-        linear-gradient(90deg,
+    background: linear-gradient(90deg,
             rgba(151, 88, 255, 0.25),
             rgba(185, 138, 255, 0.08));
 
     transform: translateX(-105%);
 
-    transition:
-        transform 0.55s var(--smooth);
+    transition: transform 0.55s ease;
+    z-index: 0;
 }
 
 .cv-button:hover::before {
@@ -376,27 +371,20 @@ body {
 }
 
 .cv-button:hover {
-    transform:
-        translateY(-3px) scale(1.025);
-
-    border-color:
-        rgba(151, 88, 255, 0.6);
-
-    box-shadow:
-        0 14px 35px rgba(151, 88, 255, 0.24);
+    transform: translateY(-3px) scale(1.025);
+    border-color: rgba(151, 88, 255, 0.6);
+    box-shadow: 0 14px 35px rgba(151, 88, 255, 0.24);
 }
 
 .cv-button:active {
-    transform:
-        translateY(-1px) scale(0.97);
+    transform: translateY(-1px) scale(0.97);
 }
 
 .cv-button i,
 .cv-button span {
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
-
 
 /* =========================================================
    MENU MOBILE
